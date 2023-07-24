@@ -1,0 +1,55 @@
+CREATE DATABASE  IF NOT EXISTS `mydb` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
+USE `mydb`;
+-- MySQL dump 10.13  Distrib 8.0.33, for Linux (x86_64)
+--
+-- Host: 127.0.0.1    Database: mydb
+-- ------------------------------------------------------
+-- Server version	8.0.33-0ubuntu0.22.04.2
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!50503 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `new_dog`
+--
+
+DROP TABLE IF EXISTS `new_dog`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `new_dog` (
+  `row_id` int NOT NULL AUTO_INCREMENT,
+  `dog_id` int NOT NULL,
+  `update_date` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+  `update_status` varchar(8) DEFAULT 'UPDATED',
+  PRIMARY KEY (`row_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=50 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `new_dog`
+--
+
+LOCK TABLES `new_dog` WRITE;
+/*!40000 ALTER TABLE `new_dog` DISABLE KEYS */;
+INSERT INTO `new_dog` VALUES (1,504,'2023-06-05 09:36:30','New Dog'),(2,504,'2023-06-05 09:36:58','Dog Died'),(3,499,'2023-06-05 09:37:51','Updated'),(4,505,'2023-06-13 09:24:52','New Dog'),(5,506,'2023-06-13 09:24:55','New Dog'),(6,505,'2023-06-13 09:25:49','Updated'),(7,506,'2023-06-13 09:26:47','Updated'),(8,505,'2023-06-13 09:27:56','Dog Died'),(9,506,'2023-06-13 09:27:58','Dog Died'),(10,507,'2023-06-14 11:05:33','New Dog'),(11,508,'2023-06-14 11:05:35','New Dog'),(12,509,'2023-06-14 11:05:36','New Dog'),(13,507,'2023-06-14 11:06:21','Updated'),(14,508,'2023-06-14 11:06:23','Updated'),(15,507,'2023-06-14 11:07:15','Treated'),(16,507,'2023-06-14 11:07:15','Dog Died'),(17,508,'2023-06-14 11:14:03','Treated'),(18,508,'2023-06-14 11:14:03','Dog Died'),(19,509,'2023-06-14 11:14:06','Treated'),(20,509,'2023-06-14 11:14:06','Dog Died'),(21,510,'2023-06-14 11:15:27','New Dog'),(22,511,'2023-06-14 11:15:28','New Dog'),(23,512,'2023-06-14 11:15:29','New Dog'),(24,510,'2023-06-14 11:16:13','Updated'),(25,511,'2023-06-14 11:16:14','Updated'),(26,510,'2023-06-14 11:16:41','Dog Died'),(27,510,'2023-06-14 11:16:41','Dog Died'),(28,511,'2023-06-14 11:17:03','Dog Died'),(29,511,'2023-06-14 11:17:03','Dog Died'),(30,512,'2023-06-14 11:17:33','Dog Died'),(31,512,'2023-06-14 11:17:33','Dog Died'),(32,513,'2023-06-14 11:18:58','New Dog'),(33,514,'2023-06-14 11:18:59','New Dog'),(34,515,'2023-06-14 11:19:00','New Dog'),(35,513,'2023-06-14 11:19:12','Dog Died'),(36,513,'2023-06-14 11:19:12','Dog Died'),(37,514,'2023-06-14 11:19:14','Dog Died'),(38,514,'2023-06-14 11:19:14','Dog Died'),(39,515,'2023-06-14 11:19:15','Dog Died'),(40,515,'2023-06-14 11:19:15','Dog Died'),(41,516,'2023-06-14 11:20:30','New Dog'),(42,517,'2023-06-14 11:20:31','New Dog'),(43,518,'2023-06-14 11:20:32','New Dog'),(44,516,'2023-06-14 11:20:52','Treated'),(45,516,'2023-06-14 11:20:52','Dog Died'),(46,517,'2023-06-14 11:20:53','Dog Died'),(47,517,'2023-06-14 11:20:53','Dog Died'),(48,518,'2023-06-14 11:20:54','Treated'),(49,518,'2023-06-14 11:20:54','Dog Died');
+/*!40000 ALTER TABLE `new_dog` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2023-07-21 14:58:40
